@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* =====================
+   Theme Variables
+===================== */
+
+/* Light Mode */
+:root {
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --text: #111827;
+  --border: #e5e7eb;
+
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  --secondary: #64748b;
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #f59e0b;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --text: #f1f5f9;
+  --border: #334155;
+
+  --primary: #3b82f6;
+  --primary-hover: #60a5fa;
+
+  --secondary: #94a3b8;
+  --success: #22c55e;
+  --danger: #ef4444;
+  --warning: #facc15;
+}
+
+/* =====================
+   Tailwind Theme Mapping (Tailwind v4)
+===================== */
+
+@theme {
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-text: var(--text);
+  --color-border: var(--border);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+
+  --color-secondary: var(--secondary);
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+}
+
+/* =====================
+   Base Styles
+===================== */
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
